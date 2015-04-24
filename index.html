@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - S.Harris_NanoD_Proj.Stage1</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<!--Codepen will yell that this isnt needed, but keep it in -->
+<HTML>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Do I need this link when I use CodePen or only when in file based setup like in Sublime/notepad++? -->
+  <title>Scott's Udacity Notes_Full: 3/13 : 4/16/2015</title>
+</head>
+
+<body>
+  <div class="TableOfContents">
+    <!--See section about The id Attribute for how to setup Table of contents.  Then apply ordered and unordered lists: http://www.w3schools.com/html/html_links.asp -->
+    <h1>Udacity Nanodegree Intro to Programming: Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson_1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson_1_1">How the Web Works</a></li>
+          <li><a href="#lesson_1_2">Tags and Elements</a></li>
+          <li><a href="#lesson_1_3">HTML Attributes</a></li>
+          <li><a href="#lesson_1_4">Images</a></li>
+          <li><a href="#lesson_1_5">Inline vs Block Elements</a></li>
+          <li><a href="#lesson_1_6">Stages of Expertise:"How Learning to Code Works"</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson_2">Lesson 2: Webpages, Documents, and Structure: Front end web development</a>
+        <ul>
+          <li><a href="#lesson_2_1">Three diff languages, diff purposes</a></li>
+          <li><a href="#lesson_2_2">Chrome Developer Tools</a></li>
+          <li><a href="#lesson_2_3">Important takeaways: Dom, Tree like structures, HTMK and CSS</a></li>
+          <li><a href="#lesson_2_4">Text Editors: 3 Types Used here so far</a></li>
+          <li><a href="#lesson_2_5">Other subjects outlined, but not covered, were they covered? Where?</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson_3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson_3_1">CSS & Avoiding Repetition</a></li>
+          <li><a href="#lesson_3_2">Box Sizing & Positioning</a></li>
+          <li><a href="#lesson_3_3">Tips for Testing Code</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings =  more important. There can be multiple h1, h2, h3  headers, each with diff sizes, so they can be re-used as needed. -->
+  <h1>Important Concepts</h1>
+  <div class="lesson">
+    <h2 id="lesson_1">Lesson 1: The Basics of the Web and HTML</h2>
+
+    <div class="Concept" id="lesson_1_1">
+      <div class="concept-subject">
+        How the Web Works
+      </div>
+      <div class="concept-description">
+        <p>
+          The web is a collection of html pages <em>ie links</em>. A web page is a text doc written in a language called <em>HTML</em>. Web browsers read these documents, and then interpret and display them. Here is a visual <b>{me -> computer + browser -> the internet -> /http/ ->Servers (then back to me)}.</b>
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496"> This Video</a> does a good job of explaining that flow of information.
+          <b>HTML = </b><em>hyper text markup language.</em> HTML documents contain <b>text content = what I see</b> and <b>markup = how it looks.</b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="Concept" id="lesson_1_2">
+    <div class="concept-subject">
+      Tags and Elements
+      <!--Display HTML Tags as text: http://stackoverflow.com/questions/8571257/how-to-display-html-tags-as-text   This way is a little tedious, but effective in flow of text-->
+    </div>
+    <div class="concept-description">
+      <ol>
+        <li><b>HTML Tags:</b> are always contained within angled brackets.
+          <br> </li>
+        <li>Most tags have an opening tag (&lt;p&gt; for example) and a closing tag, (&lt;/p&gt;)</li>
+        <li>Some tags (called "void" tags) do not require a closing tag (like the &lt;br&gt; tag)r</li>
+        <li>Element: An HTML element refers to everything within a set of opening and closing tags</li>
+      </ol>
+      <br>
+      <b>Example of a few Tags:</b>
+      <br> &lt;name&gt;Tag&lt;/Name&gt;
+      <br> &lt;b&gt;Bold&lt;/b&gt;
+      <br> &lt;em&gt;Italics&lt;/em&gt;
+      <br> &lt;em&gt;Italics then&lt;b&gt;nested bold statement&lt;/b&gt;&lt;/em&gt;
+    </div>
+    <br>
+
+    <div class="Concept" id="lesson_1_3">
+      <div class="concept-subject">
+        HTML Attributes
+      </div>
+      <div class="concept-description">
+        <p>
+          This is a property of an HTML element. Used to refer to other docs incl. images and videos (or web links, not videos directly). For example, to set the href attribute of an anchor tag to the Udacity URL, you would write &lt;a href="www.udacity.com"&gt;
+          That href would be shown as <a href="www.udacity.com">Udacity Website</a>
+        </p>
+        <p><b>Example of a few attributes:</b>
+          <br> Anchors for making links (link wont work in scratchpad.io, but will look neat) See Example of this in action directly below: I am going to open this link &lt;a href ="www.reddit.com"&gt;Reddit&lt;/a&gt;
+        </p>
+      </div>
+    </div>
+
+    <div class="Concept" id="lesson_1_4">
+      <div class="concept-subject">
+        Images
+      </div>
+      <div class="concept-description">
+        Use this syntax: &lt;img src="url" alt="text"&gt;
+        <br> src = source of file or url of image alt = text for image No closing tag for images.
+        <br> How do I get an image to display when in codepen: use url of image. How to do that: find image you want online, right click and chose copy image url, then paste that in new browser.
+        <br> When do you use html vs css to put styles on elements? here i outline some stuff in Html, like width, height, but should that all be in CSS?
+
+        <img class="urlImageleft" src="http://www.jeasyui.com/images/html5.gif" alt="HTML5 Icon" style="width:150px;height:130px">
+        <img class="urlImageright" src="http://smashinghub.com/wp-content/uploads/2012/08/css_reset.jpg" alt="CSS Example" style="width:150px;height:130px">
+      </div>
+    </div>
+
+    <div class="Concept" id="lesson_1_5">
+      <div class="concept-subject">
+        Inline vs Block Elements
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them.
+          <b>Inline</b> includes: b, span, br, img, strong, a. <b>Block</b> includes: div, p, form
+        </p>
+      </div>
+    </div>
+
+    <div class="Concept" id="lesson_1_6">
+      <div class="concept-subject">
+        Stages of Expertise:"How Learning to Code Works"
+      </div>
+      <div class="concept-description">
+        <p>
+          <b>Strategies 'how to stick with it':</b> google, discussions, take a break, just keep going, continue to the answer (accept temp. confusion)'
+          <br>Remember how it was to learn to code in SQL and the baby steps that now seem routine.
+          <br>
+        </p>
+        <div><b>Stages of Expertise Chart: Novice to Expert</b>
+          <div><b>Stages of Expertise Chart: Novice to Expert</b>
+            <ol>
+              <li>Ignorance</li>
+              <li>Minutes--> to Awareness</li>
+              <li>Awareness</li>
+              <li>Days--> to Ablity</li>
+              <li>SQL Databases</li>
+              <li>Get vs Post Requests</li>
+              <li>Webpage Structure</li>
+              <li>Responsive Design</li>
+              <li>Ability</li>
+              <li>Years--> to Fluency</li>
+              <li>Functions</li>
+              <li>Anstract Thinking</li>
+              <li>Fluency</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson">
+    <h2 id="lesson_2">Lesson 2: Webpages, Structured Documents: Front end web development</h2>
+
+    <div class="Concept" id="lesson_2_1">
+      <div class="concept-subject">
+        Three diff languages & diff purposes
+      </div>
+      <div class="concept-description">
+        <ol>
+          <li><b>html</b> - structual, like walls and rooms a in house </li>
+          <li><b>css</b> - style, like wall color and carpet or hard floor</li>
+          <li><b>javascript</b> - interactive component, garage door opener</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="Concept" id="lesson_2_2">
+      <div class="concept-subject">
+        Chrome Developer Tools
+      </div>
+      <div class="concept-description">
+        <p>
+          Use chrome to see html/structure and css/style on any web page. Go to settings, tools, developer tools to get split screen bottom tools. Tree like structure, from top to bottom, looking at 'play arrows' (then expand them to see more).
+        </p>
+      </div>
+    </div>
+
+    <div class="Concept" id="lesson_2_3">
+      <div class="concept-subject">
+        Important takeaways: Dom, Tree like structures, HTML and CSS
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li>HTML and CSS are both <em>"languages"</em> </li>
+          <li>HTML controls the <em>"structure"</em> of a web page</li>
+          <li>CSS controls the <em>"style"</em> of a page (how it looks).</li>
+          <li>When programmers talk about the <em>"DOM"</em> (Document Object Model) they are talking about the tree-like structure of a page.</li>
+          <li>To learn more about what a <em>"tree-like structure"</em> means, read the first <b>two paragraphs</b> of the wikipedia article on <a href="http://en.wikipedia.org/wiki/Tree_structure"> Tree Structures.</a></li>
+          <li>Websites and html are <b>broken into boxes (images, text, headers, footers, etc).  Define boxes with <em>'div'</em> tags.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Concept" id="lesson_2_4">
+      <div class="concept-subject">
+        Three Different Text Editor and their Uses
+      </div>
+      <div class="concept-description">
+        <p>
+          <b>Scratchpad vs. Codepen vs. Sublime</b>
+          <br>
+          <em>For now,</em> write html and CSS in scratchpad and share in codepen. Later use sublime to save code to computer.
+          <br><b>To view codepen and share results:</b> pull up pen, under editor, show 'full page', then copy url
+          <br>Sublime Text 2: open code in browser: right click code in editor - select that option
+        </p>
+      </div>
+    </div>
+
+    <div class="Concept" id="lesson_2_5">
+      <div class="concept-subject">
+        Other subjects outlined, but not covered <span style="color:blue">were they covered? Where?</span>
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li>HTTP = <b>Hypertext Transfer Protoco</b>. <em>HTTP</em> is the foundation of data communication for the Web(www.)</li>
+          <li>
+            <B>Web Applications</B> = did we discuss this??</li>
+          <li> Note: CSS language is for styling the text</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson">
+    <h2 id="lesson_3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+    <div class="concept" id="lesson_3_1">
+      <div class="concept-subject">
+        CSS & Avoiding Repetition
+      </div>
+      <div class="concept-description">
+        <p>
+          CSS allows programmers to avoid repetition. They do this by using refrential data such as CSS to apply style to large and numerous blocks of elements/tags. The alternative would be to apply style at each element...eventually it gets ridiculous and a major
+          pain when updating things...having to change it in a million places instead of a handlful. CSS stands for <em>"Cascading Style Sheets."</em> The "C" is by far the most important part of this phrase.That idea is known as
+          <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance"> inheritance </a> and understanding it requires abstract thinking.
+        </p>
+        <p><b>Treat yourself...don't REPEAT yourself!!</b>
+        </p>
+        <p>In general, descendant elements inherit text-related properties, but box-related properties are not inherited.
+        </p>
+        <ul>
+          <li>Properties that <b>CAN BE inherited:</b> are color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space and word-spacing</li>
+          <li>Properties that <b>CANNOT BE inherited</b> are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.</li>
+          <li> Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth
+            and development costs.</li>
+        </ul>
+
+        <p>
+          <b>Here are a few good resources:</b>
+        </p>
+        <ul>
+          <li><a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3575138706/m-3611108698">Good recap of "CSS Summary and Reference"</a></li>
+          <li><a href="https://css-tricks.com/how-css-selectors-work/">Very nice article on CSS selectors</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS References</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color/">Text color reference</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="concept" id="lesson_3_2">
+      <div class="concept-subject">
+        Box Sizing & Positioning
+      </div>
+      <div class="concept-description">
+        <p>
+          <b>There are four main points that Jessica addressed about box sizing:</b>
+        </p>
+        <ol>
+          <li>HTML elements are boxes and each box has 4 components.</li>
+          <li>Because there are so many components to each box, it can often be hard to get the size of a box just right.</li>
+          <li>There are two techniques you can use to help deal with sizing issues.
+            <ul>
+              <li>3a. Set sizes in terms of percent rather than pixels.</li>
+              <li>3b. Set the box-sizing attribute to border-box for every element. </li>
+            </ul>
+          </li>
+          <li>4. Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.</li>
+        </ol>
+        <p>
+          <b>Box Positioning</b>
+        </p>
+
+        <ol>
+          <li>Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.</li>
+          <li>Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other. Not exactly sure how this works...need to revisit or find sample.</li>
+        </ol>
+        <p><b>More about Boxes</b></p>
+        <p>All text and images on a webpage is a box, even items that do not look like boxes, like circles. Tips for making all objects into Nested Boxes. Each box becomes it's own Div tag or 'division'
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson_3_3">
+      <div class="concept-subject">
+        Tips for Testing Code
+      </div>
+      <div class="concept-description">
+        <p>Code, test, refine, repeat...</p>
+        <ol>
+          <li>Look for natural boxes</li>
+          <li>Look for repeated styles and semantic elements: headers, sub headers. content</li>
+          <li>Write html: add tags, make headings</li>
+          <li>Apply styles (from biggest, to smallest): size of boxes, how to position the boxes, layout</li>
+          <li>Fix things</li>
+          <li>Repeat 3-5 until code looks like design mock
+            <ul>
+              <li><a href="http://validator.w3.org/#validate_by_input">To verify HTML Code</a></li>
+              <li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">To verify CSS Code</a></li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> END of Website: breaks put in on purpose so that the TOC links work better. Dont know how to do it another way now.
+</body>
+
+</body>
+
+</html>
